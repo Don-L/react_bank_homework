@@ -18,7 +18,7 @@ var BankAccount = React.createClass({
       if (this.state.editNotes === false) {
         return (
           <div key={this.props.data.owner} >
-          <p onClick={this.accClicked}>Account holder: {this.props.data.owner}</p>
+          <p className='a' onClick={this.accClicked}>Account holder: {this.props.data.owner}</p>
           <p>Balance: £{parseFloat(this.props.data.amount).toFixed(2)}</p>
           {notesElement}
           <br/>
@@ -27,7 +27,7 @@ var BankAccount = React.createClass({
       } else {
         return (
           <div key={this.props.data.owner} >
-          <p onClick={this.accClicked}>Account holder: {this.props.data.owner}</p>
+          <p className='a' onClick={this.accClicked}>Account holder: {this.props.data.owner}</p>
           <p>Balance: £{parseFloat(this.props.data.amount).toFixed(2)}</p>
           <form onSubmit={this.handleNoteSubmit}>
             <input
@@ -45,7 +45,7 @@ var BankAccount = React.createClass({
     } else {
       return (
         <div key={this.props.data.owner} onClick={this.accClicked}>
-        <p>Account holder: {this.props.data.owner}</p>
+        <p className='a'>Account holder: {this.props.data.owner}</p>
         <p>Balance: £{parseFloat(this.props.data.amount).toFixed(2)}</p>
         <br/>
         </div>

@@ -19966,7 +19966,7 @@
 	          { key: this.props.data.owner },
 	          React.createElement(
 	            'p',
-	            { onClick: this.accClicked },
+	            { className: 'a', onClick: this.accClicked },
 	            'Account holder: ',
 	            this.props.data.owner
 	          ),
@@ -19985,7 +19985,7 @@
 	          { key: this.props.data.owner },
 	          React.createElement(
 	            'p',
-	            { onClick: this.accClicked },
+	            { className: 'a', onClick: this.accClicked },
 	            'Account holder: ',
 	            this.props.data.owner
 	          ),
@@ -20014,7 +20014,7 @@
 	        { key: this.props.data.owner, onClick: this.accClicked },
 	        React.createElement(
 	          'p',
-	          null,
+	          { className: 'a' },
 	          'Account holder: ',
 	          this.props.data.owner
 	        ),
