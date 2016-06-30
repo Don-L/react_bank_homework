@@ -1,3 +1,8 @@
 p.a {
   border-style: groove;
 }
+
+p.a:hover {
+  background-color: black;
+  color: white;
+}
